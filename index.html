@@ -1,0 +1,293 @@
+<title>Spencer Kyonka</title>
+
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+  rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style1.css">
+
+
+<!-- <div id="container" style="position:relative;">
+    <div id="div1" style="position:absolute; top:0; left:0;"></div>
+    <div id="div2" style="position:absolute; top:0; left:0;"></div>
+</div> -->
+
+<div class="container">
+  <div class="topnav">
+    <!-- <a class="active" href="#home">Home</a> -->
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+
+
+  <div class="practer"></div>
+  <div class="practer"></div>
+  <div class="practer"></div>
+  <div class="practer"></div>
+  <div class="practer"></div>
+  <div class="practer"></div>
+
+  <button class="btn btn-primary" type="button" name="button">Submit</button>
+
+
+
+
+
+    <script src="main.js"></script>
+
+</div>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+
+<div id="content" class="container">
+    <div id="navigation" class="navbar">
+        <a>
+            <div class="navbar-brand">
+                <h1 class="vcenter">
+                    PDF <span class="logo-text-converter">Converter</span>
+                </h1>
+            </div>
+        </a>
+    </div>
+
+    <div class="control-form">
+
+        <div class="control-form well">
+            <div class="page-name">
+                <h2 class="text-center">
+                    Convert Word Files to PDF
+                </h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="clientUploadFileHolder">
+                        <div class="k-widget k-upload k-header k-upload-empty">
+                            <div class="k-dropzone">
+                                <div class="k-upload-button btn btn-lg btn-primary">
+                                    <input type="file" id="clientUpload" autocomplete="off">
+                                    <div class="k-upload-button-icon">
+                                        <i class="fa fa-file-text-o fa-4x" aria-hidden="true"></i>
+                                        <i class="fa text-dir-fa-arrow fa-2x" aria-hidden="true"></i>
+                                        <i class="fa fa-file-pdf-o fa-4x" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="k-upload-button-text">Select doc/docx/rtf file</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <div>
+					<h3 class="text-center">
+						<strong>Error!</strong> File type must be in either doc, docx or rtf format.
+					</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="loading">
+                    <span class="loader"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info">
+            Convert documents in doc, docx or rtf format into PDF. Use the Select file...
+            button to locate the document on your computer.
+        </div>
+
+
+        <div class="well">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="col-md-8">
+                        <div>
+                            <span class="fileName">
+								fileName.pdf
+                            </span>
+                        </div>
+                    </div><br>
+
+                    <div class="col-md-4">
+                        <div>
+                            <button class="btn btn-lg btn-primary">Download
+                                File
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+<!--
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2 class="text-center">Angular Form Validation</h2>
+    </div>
+  </div>
+
+  <form class="form-horizontal" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <div class="col-md-12">
+        <label for="username" class="control-label required">Username</label>
+        <input type="text" class="form-control" formControlName="username" autocomplete="off" [class.has-error]="contactForm.controls['username'].invalid && contactForm.controls['username'].touched"
+          [class.no-error]="contactForm.controls['username'].valid">
+        <div class="error" *ngIf="contactForm.controls['username'].errors?.required && contactForm.controls['username'].touched">
+          Username is required
+        </div>
+        <div class="error" *ngIf="contactForm.controls['username'].errors?.minlength">
+          Minimum length is 5 characters
+        </div>
+        <div class="error" *ngIf="contactForm.controls['username'].errors?.maxlength">
+          Maximum length is 10 characters
+        </div>
+      </div>
+
+    </div>
+    <div class="form-group">
+      <div class="col-md-12">
+        <label for="fullname" class="control-label required">Fullname</label>
+        <input type="text" id="fullname" class="form-control" formControlName="fullname" autocomplete="off"
+          [class.has-error]="contactForm.controls['fullname'].invalid && contactForm.controls['fullname'].touched"
+          [class.no-error]="contactForm.controls['fullname'].valid">
+        <div class="error" *ngIf="contactForm.controls['fullname'].errors?.required && contactForm.controls['fullname'].touched">
+          Fullname is required
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-12">
+        <label for="email" class="control-label required">Email</label>
+        <input type="text" class="form-control" formControlName="email" autocomplete="off" [class.no-error]="contactForm.controls['email'].valid"
+          [class.has-error]="contactForm.controls['email'].invalid && contactForm.controls['email'].touched">
+        <div class="error" *ngIf="contactForm.controls['email'].errors?.required && contactForm.controls['email'].touched">
+          Email is required
+        </div>
+        <div class="error" *ngIf="contactForm.controls['email'].errors?.email">
+          Email is invalid
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-12">
+        <label for="password" class="control-label required">Password</label>
+        <input type="password" class="form-control" formControlName="password" [class.no-error]="contactForm.controls['password'].valid"
+          [class.has-error]="contactForm.controls['password'].invalid && contactForm.controls['password'].touched">
+        <div class="error" *ngIf="contactForm.controls['password'].errors?.required && contactForm.controls['password'].touched">
+          Password is required
+        </div>
+        <div class="error" *ngIf="contactForm.controls['password'].errors?.minlength">
+          Password must have at least 8 characters
+        </div>
+        <div class="error" *ngIf="contactForm.controls['password'].errors?.pattern">
+          Password must contain at least 1 uppercase, lowercase, number and special character ($@^$#&!%*?)
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-12">
+        <label for="cpassword" class="control-label required">Confirm Password</label>
+        <input type="password" class="form-control" formControlName="cpassword" [class.no-error]="contactForm.valid"
+          [class.has-error]="contactForm.controls['cpassword'].invalid && contactForm.controls['cpassword'].touched || contactForm.errors">
+        <div class="error" *ngIf="contactForm.controls['cpassword'].errors?.required && contactForm.controls['cpassword'].touched">
+          Confirm Password is required
+        </div>
+        <div class="error" *ngIf="contactForm.errors">
+          Confirm password does not match password
+        </div>
+      </div>
+    </div>
+
+    <div formGroupName="address">
+      <div class="form-group addressLabel">
+        <div class="col-md-6">
+          <label for="address1" class="control-label required">Address 1</label>
+          <input type="text" class="form-control" formControlName="address1" [class.no-error]="contactForm.get('address').get('address1').valid"
+            [class.has-error]="contactForm.get('address').get('address1').invalid && contactForm.get('address').get('address1').touched">
+          <div class="error" *ngIf="contactForm.get('address').get('address1').errors && contactForm.get('address').get('address1').touched">
+            Address 1 is required
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="address2" class="control-label">Address 2</label>
+          <input type="text" class="form-control" formControlName="address2">
+        </div>
+        <div class="col-md-3">
+          <label for="zipcode" class="control-label required">Zip Code</label>
+          <input type="text" class="form-control" formControlName="zipcode" [class.no-error]="contactForm.controls['address'].controls['zipcode'].valid"
+            [class.has-error]="contactForm.controls['address'].controls['zipcode'].errors?.required && contactForm.controls['address'].controls['zipcode'].touched || contactForm.controls['address'].controls['zipcode'].errors?.pattern">
+          <div class="error" *ngIf="contactForm.controls['address'].controls['zipcode'].errors?.required && contactForm.controls['address'].controls['zipcode'].touched">
+            Zip Code is required
+          </div>
+
+          <div class="error" *ngIf="contactForm.controls['address'].controls['zipcode'].errors?.pattern">
+            Zip Code is invalid. Must contain only numbers (Min. 4 and Max. 6)
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group addressLabel">
+        <div class="col-md-6">
+          <label for="city" class="control-label required">City</label>
+          <input type="text" class="form-control" formControlName="city" [class.no-error]="contactForm.get('address').get('city').valid"
+            [class.has-error]="contactForm.get('address').get('city').invalid && contactForm.get('address').get('city').touched">
+          <div class="error" *ngIf="contactForm.get('address').get('city').errors && contactForm.get('address').get('city').touched">
+            City is required
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="state" class="control-label required">State</label>
+          <input type="text" class="form-control" formControlName="state" [class.no-error]="contactForm.get('address').get('state').valid"
+            [class.has-error]="contactForm.get('address').get('state').invalid && contactForm.get('address').get('state').touched">
+          <div class="error" *ngIf="contactForm.get('address').get('state').errors && contactForm.get('address').get('state').touched">
+            State is required
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="country" class="control-label required">Country</label>
+          <input type="text" class="form-control" formControlName="country" [class.no-error]="contactForm.get('address').get('country').valid"
+            [class.has-error]="contactForm.get('address').get('country').invalid && contactForm.get('address').get('country').touched">
+          <div class="error" *ngIf="contactForm.get('address').get('country').errors && contactForm.get('address').get('country').touched">
+            Country is required
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary">Submit</button>
+    <button class="btn btn-danger" (click)="resetForm()">Reset</button>
+
+  </form>
+
+</div> -->

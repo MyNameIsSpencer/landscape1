@@ -5,8 +5,8 @@ var colorX = 'dodgerblue';
 var colorArr2 = [colorX,'lightskyblue',colorX,'lightskyblue', 'rgb(200, 250, 250)', 'lightskyblue', 'rgb(200, 250, 250)',
 'orange', 'rgb(200, 250, 250)',
 'orange', '#fff196', 'lightgoldenrodyellow', '#fff196', 'lightgoldenrodyellow'];
-var skyHeights = ['8', '2', '10', '8', '2', '2', '6',
-'4', '5', '8', '6','4','3','4'];
+var skyHeights = ['8', '2', '12', '9', '3', '3', '7',
+'3', '4', '7', '5','3','2','3'];  // From top orange
 
 for (i=0; i<practer.length; i++) {
   console.log(practer[i]);

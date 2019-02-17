@@ -14,6 +14,12 @@ for (i=0; i<practer.length; i++) {
   practer[i].style.height = `${skyHeights[i]}vh`
 }
 
+
+
+
+
+
+
 // 200,250,250   45,52   rgb(200, 250, 250);
 // 9687eb
 // skyblue

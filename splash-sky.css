@@ -1,3 +1,9 @@
+#landscape {
+  overflow: hidden;
+  width: 100vw;
+}
+
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: transparent;

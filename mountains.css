@@ -8,31 +8,33 @@
   top: 0vh;
   width: 100%;
   height: 50vh;
+  overflow: hidden;
 }
 
 .bg-mountain-margin-left {
-  margin-left: 10vw;
+  /* margin-top: 45vh; */
+  left: 10vw;
 }
 
 
 
 
-
-.hill1 {
-  top: 19vw;
+#hill1 {
+  top: 16vw;
   position: absolute;
-  width: 100vw;
-  height: 10vh;
+  width: 90vw;
+  height: 30vh;
   background-color: pink;
-  transform: rotate(-5deg);
+  border-radius: 100% 0% 0px 0px;
+  /* transform: rotate(-5deg); */
 }
 
-.hill2 {
+#hill2 {
   position: absolute;
   top: 22vw;
   left: -5vw;
   width: 120vw;
-  height: 20vh;
+  height: 30vh;
   background-color: red;
   transform: rotate(1deg);
 }

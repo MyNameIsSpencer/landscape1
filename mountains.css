@@ -1,10 +1,9 @@
 #splash-bottom {
-
 }
 
 .mountain-set {
   /* background-color: red; */
-  margin-top: 60vh;
+  margin-top: 50vh;
   position: absolute;
   top: 0vh;
   width: 100%;
@@ -19,13 +18,23 @@
 
 
 
-.hill {
+.hill1 {
+  top: 19vw;
   position: absolute;
-  top: 85vh;
-  width: 100%;
-  height: 50vh;
+  width: 100vw;
+  height: 10vh;
   background-color: pink;
   transform: rotate(-5deg);
+}
+
+.hill2 {
+  position: absolute;
+  top: 22vw;
+  left: -5vw;
+  width: 120vw;
+  height: 20vh;
+  background-color: red;
+  transform: rotate(1deg);
 }
 
 

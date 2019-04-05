@@ -12,8 +12,7 @@
 }
 
 .bg-mountain-margin-left {
-  /* margin-top: 45vh; */
-  left: 10vw;
+  /* left: 10vw; */
 }
 
 
@@ -22,7 +21,7 @@
 #hill1 {
   top: 16vw;
   position: absolute;
-  width: 90vw;
+  width: 100vw;
   height: 30vh;
   background-color: pink;
   border-radius: 100% 0% 0px 0px;

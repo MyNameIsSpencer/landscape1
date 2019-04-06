@@ -1,3 +1,52 @@
+// var colorArr = ['red', 'green', 'cadetblue', 'black', 'cornflowerblue'];
+
+
+
+
+// .pine-tree:first-child {
+//   margin-top: 0;
+// }
+
+
+
+
+// pineTrees.map( pineTree => {
+//   console.log(pineTree);
+//
+//   // for (let i = 0; i > pineTree.length; i ++) {
+//   //   console.log(pineTree[i]);
+//   //
+//   // }
+// });
+// console.log(pineTrees);
+// console.log(pineTrees[0]);
+
+
+
+
+
+
+
+// 200,250,250   45,52   rgb(200, 250, 250);
+// 9687eb
+// skyblue
+// royalblue
+// powderblue
+// lightgoldenrodyellow
+// lemonchiffon
+// lightyellow
+// navajowhite
+// yellow
+// fff196
+// orange
+
+
+
+
+
+
+
+
 
   <section id="mountain-svg">
     <div style="position: relative; top: 50vh;">

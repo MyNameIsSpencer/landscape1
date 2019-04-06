@@ -20,7 +20,7 @@
   top: 16vw;
   position: absolute;
   width: 100vw;
-  height: 15vh;
+  height: 14vw;
   background-image: linear-gradient(var(--hill1-color), white);
   /* background-color: rgb(210, 255, 105); */
   border-radius: 100% 0% 0px 0px;

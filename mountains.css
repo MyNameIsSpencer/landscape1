@@ -1,4 +1,6 @@
-#splash-bottom {
+:root {
+  --pine-margin-top: -2px;
+  --hill1-color: rgb(210, 255, 105);
 }
 
 .mountain-set {
@@ -16,14 +18,15 @@
 }
 
 
-
+/* rgb(130, 157, 200); */
 
 #hill1 {
   top: 16vw;
   position: absolute;
   width: 100vw;
-  height: 30vh;
-  background-color: pink;
+  height: 15vh;
+  background-image: linear-gradient(var(--hill1-color), white);
+  /* background-color: rgb(210, 255, 105); */
   border-radius: 100% 0% 0px 0px;
   /* transform: rotate(-5deg); */
 }
@@ -34,10 +37,67 @@
   left: -5vw;
   width: 120vw;
   height: 20vh;
-  background-color: red;
+  background-color: rgb(100, 200, 0);
   transform: rotate(3deg);
   border-radius: 30% 40% 0px 0px;
 }
+
+
+/* formatting pine tress */
+.pine-tree {
+  margin-bottom: 100px;
+}
+
+
+.triangle {
+  width: 0;
+  height: 0;
+}
+
+.triangle1 {
+  margin: 0 auto;
+  border-left: 0.4vw solid transparent;
+  border-right: 0.4vw solid transparent;
+  border-bottom: 0.4vw solid var(--hill1-color);
+}
+
+.triangle2 {
+  margin: var(--pine-margin-top) auto 0 auto;
+  border-left: 0.6vw solid transparent;
+  border-right: 0.6vw solid transparent;
+  border-bottom: 0.6vw solid var(--hill1-color);
+}
+
+.triangle3 {
+  margin: var(--pine-margin-top) auto 0 auto;
+  border-left: 0.7vw solid transparent;
+  border-right: 0.7vw solid transparent;
+  border-bottom: 0.7vw solid var(--hill1-color);
+}
+
+.triangle4 {
+  margin: var(--pine-margin-top) auto 0 auto;
+  border-left: 0.8vw solid transparent;
+  border-right: 0.8vw solid transparent;
+  border-bottom: 0.8vw solid var(--hill1-color);
+}
+
+.triangle5 {
+  margin: -3px auto 0 auto;
+  border-left: 1.1vw solid transparent;
+  border-right: 1.1vw solid transparent;
+  border-bottom: 1.1vw solid var(--hill1-color);
+}
+
+
+/* .triangle1 {
+  position: absolute;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: rgb(210, 255, 105);
+  width: 20vw;
+  height: 20vh;
+
+} */
 
 
 /* #hill1-container {

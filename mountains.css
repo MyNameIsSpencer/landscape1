@@ -13,10 +13,6 @@
   overflow: hidden;
 }
 
-.bg-mountain-margin-left {
-  /* left: 10vw; */
-}
-
 
 /* rgb(130, 157, 200); */
 
@@ -44,7 +40,8 @@
 
 /* formatting pine tress */
 .pine-tree {
-  margin-top: -1%;
+  display: inline-block;
+  margin-top: -1.2%;
   margin-left: 63%;
   width: 1.2vw;
 }

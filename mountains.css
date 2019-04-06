@@ -30,12 +30,13 @@
 
 #hill2 {
   position: absolute;
-  top: 22vw;
+  top: 20vw;
   left: -5vw;
   width: 120vw;
-  height: 30vh;
+  height: 20vh;
   background-color: red;
-  transform: rotate(1deg);
+  transform: rotate(3deg);
+  border-radius: 30% 40% 0px 0px;
 }
 
 

@@ -42,12 +42,12 @@
   border-radius: 30% 40% 0px 0px;
 }
 
-
 /* formatting pine tress */
 .pine-tree {
-  margin-bottom: 100px;
+  margin-top: -1%;
+  margin-left: 63%;
+  width: 1.2vw;
 }
-
 
 .triangle {
   width: 0;
@@ -55,35 +55,35 @@
 }
 
 .triangle1 {
-  margin: 0 auto;
+  margin: 0 auto 0 0.7vw;
   border-left: 0.4vw solid transparent;
   border-right: 0.4vw solid transparent;
   border-bottom: 0.4vw solid var(--hill1-color);
 }
 
 .triangle2 {
-  margin: var(--pine-margin-top) auto 0 auto;
+  margin: var(--pine-margin-top) auto 0 0.5vw;
   border-left: 0.6vw solid transparent;
   border-right: 0.6vw solid transparent;
   border-bottom: 0.6vw solid var(--hill1-color);
 }
 
 .triangle3 {
-  margin: var(--pine-margin-top) auto 0 auto;
+  margin: var(--pine-margin-top) auto 0 0.4vw;
   border-left: 0.7vw solid transparent;
   border-right: 0.7vw solid transparent;
   border-bottom: 0.7vw solid var(--hill1-color);
 }
 
 .triangle4 {
-  margin: var(--pine-margin-top) auto 0 auto;
+  margin: var(--pine-margin-top) auto 0 0.3vw;
   border-left: 0.8vw solid transparent;
   border-right: 0.8vw solid transparent;
   border-bottom: 0.8vw solid var(--hill1-color);
 }
 
 .triangle5 {
-  margin: -3px auto 0 auto;
+  margin: -3px auto 0 0.05vw;
   border-left: 1.1vw solid transparent;
   border-right: 1.1vw solid transparent;
   border-bottom: 1.1vw solid var(--hill1-color);

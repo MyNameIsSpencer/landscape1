@@ -74,6 +74,19 @@ function oakTreeGenerator () {
   let oakCopy = oakTree.cloneNode(true);
   let xPosMod;
   let yPosMod;
+  let myColor = 'firebrick';
+  let oakTreeBigBush = oakCopy.getElementsByClassName('oak-tree-bush-big')[0];
+  let oakTreeBushes = oakCopy.getElementsByClassName('oak-tree-bush');
+
+  console.log(oakCopy);
+
+  oakTreeBigBush.style.backgroundColor = myColor;
+  for (let i = 0; i < oakTreeBushes.length; i ++) {
+    oakTreeBushes[i].style.backgroundColor = myColor;
+  }
+  // oakTreeBushes.style.backgroundColor = myColor;
+  // <div class="oak-tree-bush-big"></div>
+
 
   // xPosMod = 5;
   oakCopy.style.transform = `scale(0.5)`;

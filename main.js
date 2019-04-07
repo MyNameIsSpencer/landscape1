@@ -16,11 +16,10 @@ for (i=0; i<skyline.length; i++) {
 // Make triangles in trees different sizes
 var pineTrees = document.getElementsByClassName("pine-tree");
 
-for (var pine in pineTrees) {
 
 
 
-
-  console.log(pineTrees[pine]);
-
-}
+// example logging of objects
+// for (var pine in pineTrees) {
+//   console.log(pineTrees[pine]);
+// }

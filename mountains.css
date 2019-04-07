@@ -1,5 +1,6 @@
 :root {
-  --pine-margin-top: -2px;
+  /* --pine-margin-top: -2px; */
+  --pine-margin-top: -0.2vw;
   --hill1-color: rgb(210, 255, 105);
 }
 
@@ -36,6 +37,15 @@
   background-color: rgb(100, 200, 0);
   transform: rotate(3deg);
   border-radius: 30% 40% 0px 0px;
+}
+
+#hill3 {
+  position: absolute;
+  top: 30vw;
+  left: -5vw;
+  width: 120vw;
+  height: 20vh;
+  background-color: rgb(100, 200, 0);
 }
 
 /* formatting pine tress */
@@ -87,27 +97,8 @@
 }
 
 
-/* .triangle1 {
-  position: absolute;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background-color: rgb(210, 255, 105);
-  width: 20vw;
-  height: 20vh;
 
-} */
-
-
-/* #hill1-container {
-  position: absolute;
-  overflow: hidden;
-  top: 5vw;
-  left: 35vw;
-  width: 70vw;
-  height: 20vw;
-}
-
-
-
+/*
 #hill1 {
   margin-top: 5vw;
   z-index: 10;

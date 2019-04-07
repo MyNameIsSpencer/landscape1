@@ -9,6 +9,11 @@
   --hill2-color: rgb(50, 130, 0);
 }
 
+#hidden-assets {
+  display: none;
+}
+
+
 .mountain-set {
   /* background-color: red; */
   margin-top: 50vh;

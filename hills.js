@@ -2,6 +2,12 @@ let hill1 = document.getElementById('hill1');
 let hill3 = document.getElementById('hill3');
 let backPineTree = document.getElementsByClassName('back-pine-tree')[0];
 let frontPineTree = document.getElementsByClassName('front-pine-tree')[0];
+let oakTree = document.getElementsByClassName('oak-tree-container')[0];
+
+
+// let colors = ['firebrick', 'orange', 'darkgreen', 'green', 'darkgreen', 'green', 'yellow'];
+ // pine, oak, columnar
+
 
 
 
@@ -60,11 +66,27 @@ function hill3Treeline() {
     hill3.appendChild(newDiv);
     xPosMod += 1 + Math.random();
   }
+}
+
+
+
+function oakTreeGenerator () {
+  let oakCopy = oakTree.cloneNode(true);
+  let xPosMod;
+  let yPosMod;
+
+  // xPosMod = 5;
+  oakCopy.style.transform = `scale(0.5)`;
+  oakCopy.style.left = `${xPosMod}%`;
+
+  hill3.appendChild(oakCopy);
 
 }
 
 
 
 
+
 hill1Treeline();
 hill3Treeline();
+oakTreeGenerator();

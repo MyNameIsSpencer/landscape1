@@ -1,6 +1,6 @@
 #landscape {
   overflow: hidden;
-  width: 100vw;
+  max-width: 100vw;
   max-height: 100vh;
 }
 
@@ -38,6 +38,7 @@
   background-color: #4CAF50;
   color: white;
 }
+
 
 /* Testing out sky colors */
 .practer {

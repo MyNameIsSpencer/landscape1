@@ -48,6 +48,42 @@
 
 
 
+/*
+#hill1 {
+  margin-top: 5vw;
+  z-index: 10;
+  /* z-index: 10; */
+  /* position: relative;
+  width: 170vw;
+  height: 30vw; */
+  /* background: var(--hill1-color); */
+  /* background-image: linear-gradient(red, yellow); */
+  /* background: linear-gradient( var(--hill1-color) 15%, whitesmoke 42%); */
+  /* background: linear-gradient(120deg, var(--hill1-color) 15%, white 40%); */
+
+  /* border-radius: 50%; */
+  /* border-top-left-radius: 20%;
+  border-top-right-radius: 10%; */
+/* } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <section id="mountain-svg">
     <div style="position: relative; top: 50vh;">
 

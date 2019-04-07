@@ -14,8 +14,8 @@ function hill1Treeline() {
 
     newDiv.style.position = 'absolute';
     newDiv.style.display = 'inline-block';
-    newDiv.style.left = `${xPosMod + 64}%`;
-    newDiv.style.marginTop = `${-1.3 - yPosMod}%`;
+    newDiv.style.left = `${xPosMod + 62}%`;
+    newDiv.style.marginTop = `${-0.9 - yPosMod}%`;
 
     hill1.appendChild(newDiv);
     xPosMod += 1 + Math.random();

@@ -1,7 +1,12 @@
 :root {
   /* --pine-margin-top: -2px; */
   --pine-margin-top: -0.2vw;
-  --hill1-color: rgb(210, 255, 105);
+  /* --hill1-color: rgb(210, 255, 105); */
+  --hill1-color: rgb(100, 200, 0);
+  /* --hill2-color: rgb(100, 200, 0); */
+  /* --hill2-color: rgb(120, 140, 12); */
+  /* --hill2-color: rgb(50, 110, 0); */
+  --hill2-color: rgb(50, 130, 0);
 }
 
 .mountain-set {
@@ -33,85 +38,112 @@
   top: 20vw;
   left: -5vw;
   width: 120vw;
-  height: 20vh;
-  background-color: rgb(100, 200, 0);
+  height: 15vw;
+  background-color: var(--hill2-color);
   transform: rotate(3deg);
-  border-radius: 30% 40% 0px 0px;
+  border-radius: 30% 40% 0 0;
 }
 
 #hill3 {
   position: absolute;
-  top: 30vw;
+  top: 27vw;
   left: -5vw;
   width: 120vw;
-  height: 20vh;
-  background-color: rgb(100, 200, 0);
+  height: 30vh;
+  background-color: var(--hill2-color);
 }
 
-/* formatting pine tress */
-.pine-tree {
-  display: inline-block;
-  margin-top: -1.2%;
-  margin-left: 63%;
-  width: 1.2vw;
-}
 
+
+/* .trianlge applies to all pine trees */
 .triangle {
   width: 0;
   height: 0;
 }
 
-.triangle1 {
-  margin: 0 auto 0 0.7vw;
-  border-left: 0.4vw solid transparent;
-  border-right: 0.4vw solid transparent;
-  border-bottom: 0.4vw solid var(--hill1-color);
+/* background light colour pine tree line */
+.pine-tree {
+  display: inline-block;
+  width: 1.2vw;
 }
 
-.triangle2 {
+.back-triangle1 {
+  margin: 0 auto 0 0.7vw;
+  border-left: 0.3vw solid transparent;
+  border-right: 0.3vw solid transparent;
+  border-bottom: 0.3vw solid var(--hill1-color);
+}
+
+.back-triangle2 {
   margin: var(--pine-margin-top) auto 0 0.5vw;
+  border-left: 0.45vw solid transparent;
+  border-right: 0.45vw solid transparent;
+  border-bottom: 0.45vw solid var(--hill1-color);
+}
+
+.back-triangle3 {
+  margin: var(--pine-margin-top) auto 0 0.4vw;
+  border-left: 0.5vw solid transparent;
+  border-right: 0.5vw solid transparent;
+  border-bottom: 0.5vw solid var(--hill1-color);
+}
+
+.back-triangle4 {
+  margin: var(--pine-margin-top) auto 0 0.3vw;
   border-left: 0.6vw solid transparent;
   border-right: 0.6vw solid transparent;
   border-bottom: 0.6vw solid var(--hill1-color);
 }
 
-.triangle3 {
+.back-triangle5 {
+  margin: -3px auto 0 0.05vw;
+  border-left: 0.9vw solid transparent;
+  border-right: 0.9vw solid transparent;
+  border-bottom: 0.9vw solid var(--hill1-color);
+}
+
+
+
+/* foreground darker treelin */
+.fronter-pine-tree {
+  display: inline-block;
+  margin-top: -9%;
+  margin-left: 23%;
+  width: 1.5vw;
+}
+
+
+.front-triangle1 {
+  margin: 0 auto 0 0.7vw;
+  border-left: 0.4vw solid transparent;
+  border-right: 0.4vw solid transparent;
+  border-bottom: 0.4vw solid var(--hill2-color);
+}
+
+.front-triangle2 {
+  margin: var(--pine-margin-top) auto 0 0.5vw;
+  border-left: 0.6vw solid transparent;
+  border-right: 0.6vw solid transparent;
+  border-bottom: 0.6vw solid var(--hill2-color);
+}
+
+.front-triangle3 {
   margin: var(--pine-margin-top) auto 0 0.4vw;
   border-left: 0.7vw solid transparent;
   border-right: 0.7vw solid transparent;
-  border-bottom: 0.7vw solid var(--hill1-color);
+  border-bottom: 0.7vw solid var(--hill2-color);
 }
 
-.triangle4 {
+.front-triangle4 {
   margin: var(--pine-margin-top) auto 0 0.3vw;
   border-left: 0.8vw solid transparent;
   border-right: 0.8vw solid transparent;
-  border-bottom: 0.8vw solid var(--hill1-color);
+  border-bottom: 0.8vw solid var(--hill2-color);
 }
 
-.triangle5 {
+.front-triangle5 {
   margin: -3px auto 0 0.05vw;
   border-left: 1.1vw solid transparent;
   border-right: 1.1vw solid transparent;
-  border-bottom: 1.1vw solid var(--hill1-color);
+  border-bottom: 1.1vw solid var(--hill2-color);
 }
-
-
-
-/*
-#hill1 {
-  margin-top: 5vw;
-  z-index: 10;
-  /* z-index: 10; */
-  /* position: relative;
-  width: 170vw;
-  height: 30vw; */
-  /* background: var(--hill1-color); */
-  /* background-image: linear-gradient(red, yellow); */
-  /* background: linear-gradient( var(--hill1-color) 15%, whitesmoke 42%); */
-  /* background: linear-gradient(120deg, var(--hill1-color) 15%, white 40%); */
-
-  /* border-radius: 50%; */
-  /* border-top-left-radius: 20%;
-  border-top-right-radius: 10%; */
-/* } */

@@ -90,37 +90,40 @@ function oakTreeGenerator (xPos, yPos) {
   oakCopy.style.top = `${yPos}vw`;
 
   hill3.appendChild(oakCopy);
-
+  console.log('Oak Tree: ' + xPos);
 }
 
 
 
 function singlePineGenerator (xPos, yPos) {
-  let myColor = pineColors[Math.floor(Math.random()*pineColors.length)];
+  let myColor = pineColors[ Math.floor(Math.random() * pineColors.length )];
   let pineCopy = forestPine.cloneNode(true);
   let newDiv = document.createElement('div');
   newDiv.appendChild(pineCopy);
-
 
   newDiv.style.position = 'absolute';
   newDiv.style.display = 'inline-block';
   newDiv.style.left = `${xPos}%`;
   newDiv.style.top = `${yPos}vw`;
 
-
+  console.log(newDiv);
   hill3.appendChild(newDiv);
+  console.log('Pine Tree: ' + xPos);
 }
 
 
 
 function foreGroundTrees (treeCounter) {
   let xPos = 0;
-  let yPos = 0;
+  // let xPos = 0;
+  let yMod = 0;
 
   for (let i = 0; i < treeCounter; i ++) {
-    // Math.random() > 0.5 ? oakTreeGenerator() : singlePineGenerator();
-    Math.random() > 0.5 ? console.log('generatePine tree') : oakTreeGenerator(xPos, yPos);
-    xPos += 1;
+    let randomTree = Math.round(Math.random());
+    let yPos = Math.random() * 1.5 - 0.5 + yMod;
+    (randomTree > 0.5) ? singlePineGenerator(xPos, yPos) : oakTreeGenerator(xPos, yPos);
+    // console.log(randomTree);
+    xPos += (Math.random() * 3 + 1);
   }
 
 // adjust frontal treeline for front mountain treeline

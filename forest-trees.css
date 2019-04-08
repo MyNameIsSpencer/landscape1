@@ -1,6 +1,8 @@
 :root {
   --wood-color: sienna;
   --leaf-color: orange;
+  --forest-pine-color: darkgreen;
+  --bottom-border: 1.4vw;
 }
 
 
@@ -9,6 +11,7 @@
 /* oak tree styling VVV */
 .oak-tree-container {
   position: relative;
+  margin-left: -60%;
 }
 
 .oak-tree-bush-big {
@@ -66,4 +69,53 @@
   border-left: 1vw solid transparent;
   border-right: 1vw solid transparent;
   border-bottom: 15vw solid var(--wood-color);
+}
+
+
+
+
+
+
+
+
+/* background light colour pine tree line */
+.forest-pine-tree {
+  display: inline-block;
+  width: calc(var(--bottom-border) * 2);
+  /* height: 6vw; */
+  background-color: lightpink;
+}
+
+/* .trianlge applies to all pine trees */
+.triangle {
+  width: 0;
+  height: 0;
+}
+
+.forest-triangle1 {
+  margin: 0 auto 0 calc(50% - 0.5vw);
+  border-left: 0.5vw solid transparent;
+  border-right: 0.5vw solid transparent;
+  border-bottom: 0.5vw solid var(--forest-pine-color);
+}
+
+.forest-triangle2 {
+  margin: var(--pine-margin-top) auto 0 calc(50% - 0.7vw);
+  border-left: 0.7vw solid transparent;
+  border-right: 0.7vw solid transparent;
+  border-bottom: 0.7vw solid var(--forest-pine-color);
+}
+
+.forest-triangle3 {
+  margin: var(--pine-margin-top) auto 0 calc(50% - 1vw);
+  border-left: 1vw solid transparent;
+  border-right: 1vw solid transparent;
+  border-bottom: 1vw solid var(--forest-pine-color);
+}
+
+.forest-triangle4 {
+  margin: var(--pine-margin-top) auto 0 0;
+  border-left: 1.4vw solid transparent;
+  border-right: 1.4vw solid transparent;
+  border-bottom: var(--bottom-border) solid var(--forest-pine-color);
 }

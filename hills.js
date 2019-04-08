@@ -5,8 +5,8 @@ let frontPineTree = document.getElementsByClassName('front-pine-tree')[0];
 let oakTree = document.getElementsByClassName('oak-tree-container')[0];
 let forestPine = document.getElementsByClassName('forest-pine-tree')[0];
 
-let pineColors = ['rgb(0, 70, 100)', 'rgb(0, 75, 65)', 'darkgreen', 'rgb(120, 140, 12)', 'rgb(210, 255, 105)' ];
-let oakColors = ['firebrick', 'orange', 'darkgreen', 'lightgreen', 'yellow'];
+let pineColors = ['rgb(0, 70, 100)', 'rgb(0, 75, 65)', 'darkgreen', 'rgb(120, 140, 12)' ];
+let oakColors = ['firebrick', 'orange', 'lightgreen', 'yellow', 'darkgreen'];
  // pine, oak, columnar
 
 
@@ -90,7 +90,6 @@ function oakTreeGenerator (xPos, yPos) {
   oakCopy.style.top = `${yPos}vw`;
 
   hill3.appendChild(oakCopy);
-  console.log('Oak Tree: ' + xPos);
 }
 
 
@@ -101,31 +100,50 @@ function singlePineGenerator (xPos, yPos) {
   let newDiv = document.createElement('div');
   newDiv.appendChild(pineCopy);
 
+  let triangles = pineCopy.getElementsByClassName('triangle');
+  for (i = 0; i < triangles.length; i++) {
+    triangles[i].style.borderBottomColor = myColor;
+  }
+
   newDiv.style.position = 'absolute';
   newDiv.style.display = 'inline-block';
   newDiv.style.left = `${xPos}%`;
   newDiv.style.top = `${yPos}vw`;
 
-  console.log(newDiv);
   hill3.appendChild(newDiv);
-  console.log('Pine Tree: ' + xPos);
 }
 
 
 
 function foreGroundTrees (treeCounter) {
-  let xPos = 0;
-  // let xPos = 0;
-  let yMod = 0;
+  let xPos = 4;
+  let yMod = -3;
+  let triggerPoint;
+
 
   for (let i = 0; i < treeCounter; i ++) {
     let randomTree = Math.round(Math.random());
-    let yPos = Math.random() * 1.5 - 0.5 + yMod;
+    let yPos = Math.random() * 1.5 - 0.75 + yMod;
     (randomTree > 0.5) ? singlePineGenerator(xPos, yPos) : oakTreeGenerator(xPos, yPos);
     // console.log(randomTree);
-    xPos += (Math.random() * 3 + 1);
+    xPos += (Math.random() * 2 + 1);
+    if (xPos >= triggerPoint) {
+      xPos = 4;
+      yMod += 3;
+    }
+
+    if (yMod <= -3) {
+      triggerPoint = 55;
+    } else if (yMod < 1) {
+      triggerPoint = 80;
+    } else {
+      triggerPoint = 120;
+    }
+
   }
 
+// if xPos >= 100%, reset xPos to 0, yPos gets more
+// skew probability toward greens
 // adjust frontal treeline for front mountain treeline
 
 // need number of trees
@@ -133,7 +151,6 @@ function foreGroundTrees (treeCounter) {
 // pass color
 
 // each tree iterate xPos
-// if xPos >= 100%, reset xPos to 0, yPos gets more
 // yPos has RNG range
 
 }
@@ -144,4 +161,4 @@ function foreGroundTrees (treeCounter) {
 hill1Treeline();
 hill3Treeline();
 // oakTreeGenerator(5, 5);
-foreGroundTrees(100);
+foreGroundTrees(200);

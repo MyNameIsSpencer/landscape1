@@ -12,18 +12,43 @@
 
 
 function minimalist(n, m) {
+  // split string n into an array of single character strings
   let numArr = n.split('');
-  if (numArr.length === m) return 0;
 
+  // check for edge case: m is <= the number of digits, if true return 0;
+  if (numArr.length <= m) return 0;
+
+  // convert each string element in the array to an integer
   numArr = numArr.map( number => parseInt(number));
 
-
+  // arrange integer array from lowest to highest
   numArr.sort((a, b) => a - b);
 
-  console.log(numArr);
+  // take m number of elements, starting with the first
+  // because elements are ordered, this will produce smallest m digits
+  numArr = numArr.slice(0, m);
+
+  // combine the integer elements into a single string
+  numArr = numArr.join('');
+
+  return numArr;
 }
 
-minimalist('48521', 3);
+
+minimalist('856463', 4);
+
+//
+// <script>
+// function myFunction() {
+//   var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+//   var citrus = fruits.slice(1, 3);
+//   document.getElementById("demo").innerHTML = citrus;
+// }
+// </script>
+
+
+
+
 // function findNumber(values) {
 //   let result = [];
 //
